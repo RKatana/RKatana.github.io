@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel:900');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:900|Nanum+Myeongjo|Cormorant+Unicase:600|Open+Sans+Condensed:500');
 html{
    scroll-behavior: smooth;
+}
+
+h3,h2.pt-5{
+   font-family: 'Nanum Myeongjo', serif;
 }
 img.img{
    margin-top: -100px;
@@ -13,12 +17,19 @@ img.img{
    padding-top:80px;
    font-family: 'Cinzel', serif;
 }
+nav{
+   font-family: 'Cinzel', serif;
+}
+.maroon{
+   background-color: #800000;
+   color:white;
+}
 .carousel-control-next, .carousel-control-prev{
    filter: invert(100%);
 }
 .c-indicator{
-   /* fill: '%23fff'; */
-   filter: invert(100%)
+   filter: invert(100%);
+   border-radius: 50%;
 }
 .fa-phone{
    transform: rotate(110deg);
@@ -32,7 +43,12 @@ img.img{
 }
 hr{
    border: 2px dashed #800000;
-   margin-top: -15px;
-   margin-right: 0;
+   margin-top: -8px;
+   margin-left: 0;
    width: 35%;
+}
+span.title{
+   text-decoration: underline dashed #800000;
+   margin-top: -8px;
+   margin-left: 0;
 }
