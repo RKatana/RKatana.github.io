@@ -21,21 +21,21 @@
    <!-- Custom CSS -->
    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
    <!-- Google Tag Manager (noscript) -->
    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PR67ZBR"
    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <!-- End Google Tag Manager (noscript) -->
    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light  container">
-         <a class="navbar-brand" href="/">Raphael Katana</a>
+         <a class="navbar-brand" href="#">Raphael Katana</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mr-md-5">
-               <li class="nav-item active">
-               <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+               <li class="nav-item">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item">
                <a class="nav-link" href="#projects">Projects</a>
@@ -106,7 +106,7 @@
       </div>
    </div>
    <div class="container-fluid bg-light" id='projects'>
-      <h2 class="pt-5 text-center">Sample Projects</h2>
+      <h2 class="pt-5 text-center">Sample <span class="title">Projects</span></h2>
       <div class="row card-deck">
          <div class="card mb-4 shadow">
             <div class="card-header">
@@ -234,7 +234,12 @@
          </div>
       </div>
    </div>
-
+   <footer class="bg-secondary ">
+      <div class="text-white text-center pt-4 pb-3 mb-0">
+         <h4>Made with <span>&hearts;</span> by Raphael Katana </h4>
+         <p>&copy; RKatana 2019</p>
+      </div>
+   </footer>
 
 
 
@@ -243,5 +248,18 @@
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script>
+      $(window).onload($(document).scroll(()=> {
+          if ($(document).scrollTop() > 50 ) {
+              $("header").addClass("bg-light navbar-light bg-light shadow");
+            //   $('nav').addClass('navbar-light bg-light')
+            //   $('nav>div>ul>li').children().addClass('text-white') && $('nav>a').addClass('text-white') && $('nav>button').addClass('bg-white')   
+          } 
+          else{
+            $("header").removeClass("bg-light navbar-light bg-light shadow");
+            // $('nav>div>ul>li').children().removeClass('text-white') && $('nav>a').removeClass('text-white') && $('nav>button').removeClass('bg-white')
+          }
+      }))
+   </script>
 </body>
 </html>
