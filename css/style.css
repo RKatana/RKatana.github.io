@@ -1,1 +1,113 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel:900|Nanum+Myeongjo|Cormorant+Unicase:600|Open+Sans+Condensed:500');html{scroll-behavior:smooth}h3,h2.pt-5{font-family:'Nanum Myeongjo',serif}img.img{margin-top:-100px;height:100vh;width:100%}.bl{border-left:10px solid rgb(94,16,16);margin-top:20px;padding-top:80px;font-family:'Cinzel',serif}nav{font-family:'Cinzel',serif}.maroon{background-color:#800000;color:white}.carousel-control-next,.carousel-control-prev{filter:invert(100%)}.c-indicator{filter:invert(100%);border-radius:50%}.fa-phone{transform:rotate(110deg);color:#800000}.fa-linkedin-in{color:#0077b5}.fa-envelope{color:#dc4e41}hr{border:2px dashed #800000;margin-top:-8px;margin-left:0;width:35%}span.title{text-decoration:underline dashed #800000;margin-top:-8px;margin-left:0}
+@import url('https://fonts.googleapis.com/css?family=Cinzel:900|Nanum+Myeongjo');
+html {
+    scroll-behavior: smooth
+}
+title{
+   color: coral;
+}
+.coral{
+   color: coral;
+   font-style: oblique
+}
+li{
+   list-style-type: none
+}
+blockquote{
+   margin-right:3rem;
+   margin-left: 3rem
+}
+.fa-chevron-right{
+   color:coral;
+   font-size: 18px;
+}
+.header{
+   height:37rem;
+   background-image: url('../images/1250.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.header-text{
+   padding-top: 15rem;
+   position: absolute;
+   left: 5rem;
+   font-family: 'Nanum Myeongjo', serif;
+   font-weight: 800;
+}
+.active{
+   color:coral;
+}
+h3{
+   font-family: 'Nanum Myeongjo', serif;
+   font-weight: 400;
+}
+h2.pt-5 {
+   font-family: 'Nanum Myeongjo', serif;
+   font-weight: 600;
+}
+
+img.img {
+    margin-top: -100px;
+    height: 100vh;
+    width: 100%
+}
+
+.bl {
+    border-left: 10px solid rgb(94, 16, 16);
+    margin-top: 20px;
+    padding-top: 80px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 900;
+}
+
+nav {
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 900;
+}
+
+.maroon {
+    background-color: #800000;
+    color: white
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%)
+}
+
+.c-indicator {
+    filter: invert(100%);
+    border-radius: 50%
+}
+
+.fa-phone {
+    transform: rotate(110deg);
+    color: #800000
+}
+
+.fa-linkedin-in {
+    color: #0077b5
+}
+
+.fa-envelope {
+    color: #dc4e41
+}
+
+hr {
+    border: 2px dashed #800000;
+    margin-top: -8px;
+    margin-left: 0;
+    width: 35%
+}
+
+span.title {
+    text-decoration: underline dashed #800000;
+    margin-top: -8px;
+    margin-left: 0
+}
+
+.card:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.01);
+}
