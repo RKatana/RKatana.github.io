@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name='description' content="Raphael Katana is a Full Stack Software Developer with great experience in; Website Development, Responsive Web Design, Search Engine Optimization (SEO) and profiency in Python (Django & Flask), JavaScript - Angular, HTML5 and CSS (Bootstrap $ Material).">
+   <title>Raphael Katana - A Full Stack Software Developer.</title>
+   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="./css/style.css">
+   <title>Raphael Katana - FAQ</title>
+</head>
+<body class="bg-light">
+   <div class="container-fluid pb-3">
+      <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg text-primary container"> <a class="navbar-brand" href="./index.html">Raphael Katana</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+               <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto mr-md-5">
+                        <li class="nav-item"> <a class="nav-link" href="./index.html#about">About Me <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"> <a class="nav-link" href="./index.html#projects">Projects</a></li>
+                        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contacts </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <div class="dropdown-item"> <span><i class="fas fa-phone"></i></span> <a href="tel:+254720132613">0720132613</a></div>
+                              <div class="dropdown-divider"></div>
+                              <div class="dropdown-item"> <span><i class="fab fa-linkedin-in"></i></span> <a href="https://www.linkedin.com/in/raphael-katana-97024017a/">LinkedIn</a></div>
+                              <div class="dropdown-divider"></div>
+                              <div class="dropdown-item"> <span><i class="far fa-envelope"></i></span> <a href="mailto:roduor41@gmail.com">Email</a></div>
+                           </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="./faq.html">FAQ</a></li>
+                  </ul>
+               </div>
+            </nav>
+      </header>
+   </div>
+   <div class="container-fluid">
+      <h1 class="faq text-center coral pt-5 pb-3">Frequently Asked Questions</h1>
+      <blockquote>
+         <p><code>Question:</code> Who is a full stack software developer?</p>
+         <p><code>Answer:</code> This is a developer who can do both front and back-end web development.</p><br> <hr>
+         <p><code>Question:</code> What is SEO?</p>
+         <p><code>Answer:</code> In full SEO is search engine optimization and it is basically a technique used to increase the quality and quantity of website traffic by increasing visibility of a website or a web page to users of a web search engine.</p> <br> <hr>
+         <p><code>Question:</code> What is Python?</p>
+         <p><code>Answer:</code> Python is an interpreted, high-level, general-purpose programming language.</p> <br> <hr>
+         <p><code>Question:</code> How much do you charge for a Website.</p>
+         <p><code>Answer:</code> It varies from the features of the website and it's all negotiable.</p><br><hr>
+         <br>
+         <p>Do you still have any other questions or you want to hire me? <br>Kindy reach out to me, I will be glad to assist. <br>Thank you.</p>
+      </blockquote>
+   </div>
+   <footer class="bg-secondary mb-0">
+      <div class="text-white text-center pt-4 pb-3 mb-0">
+            <h4>Made with <span>&hearts;</span> by Raphael Katana</h4>
+            <p>&copy; RKatana <span id='year'></span></p>
+      </div>
+   </footer>
+   
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script>  
+      $(window).onload($(document).scroll(() => {
+            if ($(document).scrollTop() > 50) {
+               $("header").addClass("bg-light shadow");
+            } else {
+               $("header").removeClass("bg-light shadow");
+            }
+      }))
+   </script>
+   <script>
+      var date = new Date().toString().split(' ')[3];
+      document.getElementById('year').innerHTML=date + '.';
+   </script>
+</body>
+</html>
