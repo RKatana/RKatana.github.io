@@ -1,19 +1,149 @@
-@import url(https://fonts.googleapis.com/css?family=Nanum+Myeongjo);html{scroll-behavior:smooth}title{color:coral}.coral{color:coral;font-style:oblique}li{list-style-type:none}blockquote{margin-right:3rem;margin-left:3rem}.fa-chevron-right{color:coral;font-size:18px}.header{height:37rem;background-image:url(../images/1250.png);background-size:cover;background-repeat:no-repeat;background-position:center}.header-text{padding-top:15rem;position:absolute;left:5rem;font-family:'Nanum Myeongjo',serif;font-weight:800}.active{color:coral}h3{font-family:'Nanum Myeongjo',serif;font-weight:400}h2.pt-5{font-family:'Nanum Myeongjo',serif;font-weight:600}img.img{margin-top:-100px;height:100vh;width:100%}.bl{border-left:10px solid rgb(94,16,16);margin-top:20px;padding-top:80px;font-family:'Nanum Myeongjo',serif;font-weight:900}nav{font-family:'Nanum Myeongjo',serif;font-weight:900}.maroon{background-color:maroon;color:white}.carousel-control-next,.carousel-control-prev{filter:invert(100%)}.c-indicator{filter:invert(100%);border-radius:50%}.fa-phone{transform:rotate(110deg);color:maroon}.fa-linkedin-in{color:#0077b5}.fa-envelope{color:#dc4e41}hr{border:2px dashed maroon;margin-top:-8px;margin-left:0;width:35%}span.title{text-decoration:underline dashed maroon;margin-top:-8px;margin-left:0}.card:hover{transition:all .3s ease-in-out;transform:scale(1.01)}
+@import url(https://fonts.googleapis.com/css?family=Nanum+Myeongjo);
+html {
+    scroll-behavior: smooth
+}
+
+title {
+    color: #f79831;
+}
+
+.coral {
+    color: #f79831;
+    font-style: oblique
+}
+
+li {
+    list-style-type: none
+}
+
+.fa-chevron-right {
+    color: #f79831;
+    font-size: 18px
+}
+.header {
+    height: 90vh;
+    background-image: linear-gradient(70deg,#226ea1, #f79831);
+    background-image: url(../images/resp_landing_page3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.active {
+    color: #f79831
+}
+
+h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 400
+}
+
+h2.pt-5 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 600
+}
+
+img.img {
+    margin-top: -100px;
+    height: 100vh;
+    width: 100%
+}
+
+.bl {
+    border-left: 10px solid rgb(94, 16, 16);
+    margin-top: 20px;
+    padding-top: 80px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 900
+}
+
+
+.fa-bars{
+    color: white;
+    font-size: 30px;
+}
+
+.nav-link, .navbar-brand{
+    color:white;
+}
+ .nav-link:hover,  .nav-link:focus {
+    color:white;
+    text-decoration:underline solid #2284c6;
+ }
+ .nav-bg{
+    background-image: linear-gradient(200deg,#226ea1, #f79831);
+ }
+.nav1-bg{
+    background-image: linear-gradient(-200deg,#226ea1, #f79831);
+ }
+
+.navScrollDown:hover{
+    color: rgb(247,152,49);
+}
+.maroon {
+    background-color: maroon;
+    color: white
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%)
+}
+
+.c-indicator {
+    filter: invert(100%);
+    border-radius: 50%
+}
+
+.fa-phone {
+    transform: rotate(110deg);
+    color: maroon
+}
+
+.fa-linkedin-in {
+    color: #0077b5
+}
+
+.fa-envelope {
+    color: #dc4e41
+}
+
+hr {
+    border: 2px dashed maroon;
+    margin-top: -8px;
+    margin-left: 0;
+    width: 35%
+}
+
+span.title {
+    text-decoration: underline dashed maroon;
+    margin-top: -8px;
+    margin-left: 0
+}
+
+.card:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.01)
+}
 
 .nticon {
-   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-   display: inline-block;
-   /* width: 1.5em;
-   height: 1.5em; */
-   /* vertical-align: middle; */
-   /* content: ""; */
-   /* background: no-repeat center center; */
-   margin-left: auto;
-   background-size: 100% 100%
-
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    display: inline-block;
+    margin-left: auto;
+    background-size: 100% 100%
 }
 
 .ntoggler {
-   color: rgb(0, 0, 255,0.5);
-   border-color: rgb(0, 0, 255,0.1);
+    color: rgb(0, 0, 255, 0.5);
+    border-color: rgb(0, 0, 255, 0.1);
 }
+ .header {
+        height: 100vh;
+        background-image: linear-gradient(70deg,#226ea1, #f79831);
+        background-image: url(../images/resp_landing_page3.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
