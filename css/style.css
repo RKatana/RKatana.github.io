@@ -4,11 +4,11 @@ html {
 }
 
 title {
-    color: coral
+    color: #f79831;
 }
 
 .coral {
-    color: #ff7f50;
+    color: #f79831;
     font-style: oblique
 }
 
@@ -17,7 +17,7 @@ li {
 }
 
 .fa-chevron-right {
-    color: coral;
+    color: #f79831;
     font-size: 18px
 }
 .header {
@@ -32,7 +32,7 @@ li {
 
 
 .active {
-    color: coral
+    color: #f79831
 }
 
 h3 {
@@ -59,11 +59,29 @@ img.img {
     font-weight: 900
 }
 
-nav {
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: 900
+
+.fa-bars{
+    color: white;
+    font-size: 30px;
 }
 
+.nav-link, .navbar-brand{
+    color:white;
+}
+ .nav-link:hover,  .nav-link:focus {
+    color:white;
+    text-decoration:underline solid #2284c6;
+ }
+ .nav-bg{
+    background-image: linear-gradient(200deg,#226ea1, #f79831);
+ }
+.nav1-bg{
+    background-image: linear-gradient(-200deg,#226ea1, #f79831);
+ }
+
+.navScrollDown:hover{
+    color: rgb(247,152,49);
+}
 .maroon {
     background-color: maroon;
     color: white
@@ -113,11 +131,6 @@ span.title {
 .nticon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     display: inline-block;
-    /* width: 1.5em;
-   height: 1.5em; */
-    /* vertical-align: middle; */
-    /* content: ""; */
-    /* background: no-repeat center center; */
     margin-left: auto;
     background-size: 100% 100%
 }
