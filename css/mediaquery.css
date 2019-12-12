@@ -16,6 +16,13 @@
         font-family: 'Nimbus Mono L';
         font-family: 'Nanum Myeongjo', serif;
     }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
+
 }
 @media only screen and (min-width:480px) and (max-width:768px) {
     .header {
@@ -24,7 +31,13 @@
         background-image: url(../images/resp_landing_page3.png);
         background-size: 100% 110%;
         background-repeat: no-repeat;
-        /* background-position: center */
+        background-position: center;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
     }
     .header-text {
         display: none;

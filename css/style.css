@@ -16,11 +16,6 @@ li {
     list-style-type: none
 }
 
-blockquote {
-    margin-right: 3rem;
-    margin-left: 3rem
-}
-
 .fa-chevron-right {
     color: coral;
     font-size: 18px
