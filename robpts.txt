@@ -3,6 +3,4 @@ Disallow:
 
 sitemap: https://tekkweb.com/sitemap.xml
 
-sitemap: http://tekkweb.com/sitemap.xml
-
 sitemap: https://tekkweb.com/image-sitemap.xml
