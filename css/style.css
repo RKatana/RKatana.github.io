@@ -67,9 +67,9 @@ img.img {
     color: white;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover, .nav-link:focus, .navbar-brand:hover {
     color: white;
-    text-decoration: underline solid #2284c6;
+    border-bottom: 2px solid #2284c6;
 }
 
 .nav-bg {
@@ -166,7 +166,6 @@ span.title {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 12% 85%, 10% 100%, 7% 85%, 0 85%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 12% 85%, 10% 100%, 7% 85%, 0 85%);
 }
-
 
 /* footer styles */
 
