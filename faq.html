@@ -5,18 +5,17 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <meta name="theme-color" content="coral"/>
-   <meta name='description' content="Raphael Katana is a Full Stack Software Developer with great experience in; Website Development, Responsive Web Design, Search Engine Optimization (SEO) and profiency in Python (Django & Flask), JavaScript - Angular, HTML5 and CSS (Bootstrap $ Material).">
+   <meta name='description' content="Raphael Katana is a Full Stack Software Developer, Web Designer and a Search Engine Optimization(SEO) Expert.">
    <title>Raphael Katana - A Full Stack Software Developer.</title>
    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
    <link rel="stylesheet preconnect" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    <link rel="stylesheet preconnect" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
    <link rel="stylesheet prefectch" type="text/css" href="./css/style.css">
-   <title>Raphael Katana - FAQ</title>
 </head>
 <body class="bg-light">
    <div class="container-fluid pb-3">
-      <header class="fixed-top">
+      <header class="fixed-top nav-bg">
             <nav class="navbar navbar-expand-lg text-primary container"> <a class="navbar-brand" href="./index.html">Raphael Katana</a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -25,7 +24,6 @@
                         <li class="nav-item"> <a class="nav-link" href="./index.html#projects">Projects</a></li>
                         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contacts </a>
                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <div class="dropdown-item"> <span><i class="fas fa-phone"></i></span> <a href="tel:+254720132613">0720132613</a></div>
                               <div class="dropdown-divider"></div>
                               <div class="dropdown-item"> <span><i class="fab fa-linkedin-in"></i></span> <a href="https://www.linkedin.com/in/raphael-katana-97024017a/">LinkedIn</a></div>
                               <div class="dropdown-divider"></div>
@@ -38,8 +36,10 @@
             </nav>
       </header>
    </div>
-   <div class="container-fluid">
-      <h1 class="faq text-center coral pt-5 pb-3">Frequently Asked Questions</h1>
+   <div class="faq-sect ">
+      <h1 class="faq text-center coral ptpb">Frequently Asked Questions</h1>
+   </div> <br>
+   <div class="container">
       <blockquote>
          <p><code>Question:</code> Who is a full stack software developer?</p>
          <p><code>Answer:</code> This is a developer who can do both front and back-end web development.</p><br> <hr>
@@ -63,18 +63,23 @@
    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script  async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   <script>  
+   <script>
+      $('.navbar-toggler').click(() => {
+         $('header').removeClass('nav-bg');
+         $('header').addClass('nav1-bg')
+      });
       $(window).load($(document).scroll(() => {
-            if ($(document).scrollTop() > 50) {
-               $("header").addClass("bg-light shadow");
-            } else {
-               $("header").removeClass("bg-light shadow");
-            }
-      }))
+         if ($(document).scrollTop() > 50) {
+            $("header").addClass("nav1-bg shadow")
+         } else {
+            $("header").removeClass("nav1-bg shadow")
+         }
+      }));
+
    </script>
    <script>
-      var date = new Date().toString().split(' ')[3];
-      document.getElementById('year').innerHTML=date + '.';
+      var date = new Date().getFullYear();
+      document.getElementById('year').innerHTML = date + '.';
    </script>
 </body>
 </html>
