@@ -141,9 +141,19 @@ span.title {
 }
  .header {
         height: 100vh;
-        background-image: linear-gradient(70deg,#226ea1, #f79831);
+        background: linear-gradient(70deg,#226ea1, #f79831);
         background-image: url(../images/resp_landing_page3.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
     }
+
+.faq-sect{
+    opacity:0.9;
+    height: 60vh;
+    background-color: black;
+}
+.faq{
+    opacity:1;
+    padding-top:20vh;
+}
