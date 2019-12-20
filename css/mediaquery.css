@@ -1,7 +1,7 @@
 @media only screen and (min-width:320px) and (max-width:480px) {
     .header {
         height: 40vh;
-        background-image: linear-gradient(70deg,#226ea1, #f79831);
+        background-image: linear-gradient(70deg, #226ea1, #f79831);
         background-image: url(../images/resp_landing_page1.png);
         background-size: 115% 100%;
         background-repeat: no-repeat;
@@ -16,38 +16,74 @@
         font-family: 'Nimbus Mono L';
         font-family: 'Nanum Myeongjo', serif;
     }
-    h3{
+    h3 {
         font-size: 20px;
     }
-    h4{
+    h4 {
         font-size: 18px;
     }
-
+    .faq-sect {
+        opacity: 0.9;
+        height: 40vh;
+        background-color: black;
+        background-image: url(../images/faq.jpg);
+        background-size: 100% 120%;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 12% 85%, 10% 100%, 7% 85%, 0 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 12% 85%, 10% 100%, 7% 85%, 0 85%);
+    }
+    footer {
+        padding-top: 4rem;
+        margin-bottom: 0rem;
+    }
+    .footer {
+        height: 10vh;
+    }
 }
+
 @media only screen and (min-width:480px) and (max-width:768px) {
     .header {
         height: 90vh;
-        background-image: linear-gradient(70deg,#226ea1, #f79831);
+        background-image: linear-gradient(70deg, #226ea1, #f79831);
         background-image: url(../images/resp_landing_page3.png);
         background-size: 100% 110%;
         background-repeat: no-repeat;
         background-position: center;
     }
-    h3{
+    h3 {
         font-size: 20px;
     }
-    h4{
+    h4 {
         font-size: 18px;
     }
     .header-text {
         display: none;
+    }
+    .faq-sect {
+        opacity: 0.9;
+        height: 40vh;
+        background-color: black;
+        background-image: url(../images/faq.jpg);
+        background-size: 100% 130%;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 12% 85%, 10% 100%, 7% 85%, 0 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 12% 85%, 10% 100%, 7% 85%, 0 85%);
+    }
+    footer {
+        padding-top: 5rem;
+        margin-bottom: 0rem;
+    }
+    .footer {
+        height: 10vh;
     }
 }
 
 @media only screen and (min-width:768px) and (max-width:992px) {
     .header {
         height: 45vh;
-        background-image: linear-gradient(70deg,#226ea1, #f79831);
+        background-image: linear-gradient(70deg, #226ea1, #f79831);
         background-image: url(../images/resp_landing_page3.png);
         background-size: 100% 110%;
         background-repeat: no-repeat;
@@ -56,12 +92,30 @@
     .header-text {
         display: none;
     }
+    .faq-sect {
+        opacity: 0.9;
+        height: 40vh;
+        background-color: black;
+        background-image: url(../images/faq.jpg);
+        background-size: 100% 130%;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 12% 85%, 10% 100%, 7% 85%, 0 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 12% 85%, 10% 100%, 7% 85%, 0 85%);
+    }
+    footer {
+        padding-top: 5rem;
+        margin-bottom: 0rem;
+    }
+    .footer {
+        height: 10vh;
+    }
 }
 
 @media only screen and (min-width:992.88px) and (max-width:1224px) and (orientation:portrait) {
     .header {
         height: 50vh;
-        background-image: linear-gradient(70deg,#226ea1, #f79831);
+        background-image: linear-gradient(70deg, #226ea1, #f79831);
         background-image: url(../images/resp_landing_page3.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -70,11 +124,30 @@
     .header-text {
         display: none;
     }
-} 
+    .faq-sect {
+        opacity: 0.9;
+        height: 40vh;
+        background-color: black;
+        background-image: url(../images/faq.jpg);
+        background-size: 100% 130%;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 12% 85%, 10% 100%, 7% 85%, 0 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 12% 85%, 10% 100%, 7% 85%, 0 85%);
+    }
+    footer {
+        padding-top: 5rem;
+        margin-bottom: 0rem;
+    }
+    .footer {
+        height: 10vh;
+    }
+}
+
 @media only screen and (min-width:992.88px) and (max-width:1224px) and (orientation:landscape) {
     .header {
         height: 100vh;
-        background-image: linear-gradient(70deg,#226ea1, #f79831);
+        background-image: linear-gradient(70deg, #226ea1, #f79831);
         background-image: url(../images/resp_landing_page3.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -83,4 +156,4 @@
     .header-text {
         display: none;
     }
-} 
+}

@@ -24,22 +24,63 @@
     <meta name='description'
         content="Raphael Katana is a Full Stack Software Developer, Web Designer and a Search Engine Optimization(SEO) Expert.">
     <meta name="author" content="Raphael Katana Oduor">
-    <title>Raphael Katana - A Full Stack Software Developer.</title>
+    <!-- open graph tags -->
+    <meta property='og:title' content='Tekkweb - We design, we code and optimize for search engines.'>
+    <meta property="og:description" content="Raphael Katana is a Full Stack Software Developer, Web Designer and a Search Engine Optimization(SEO) Expert.">
+    <meta property="og:url" content="https://tekkweb.com">
+    <meta property="og:image" content="https://tekkweb.com/images/resp_landing_page3.png">
+    <meta property="og:site_name" content="Tekkweb.com">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property='fb:app_d' content="510182806373598">
+    <title>Raphael Katana - A Full Stack Software Developer, Web Designer and a Search Engine Optimization(SEO) Expert.</title>
+    <link rel="canonical" href="https://tekkweb.com">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="./manifest.json">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet preload" href="./css/bootstrap.css" as='style'>
     <link rel="preload stylesheet" type="text/css" href="./css/style.css" as="style">
     <link rel="preload stylesheet" href="./css/mediaquery.css" as="style">
    
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" class="bg-light">
+<body  class="bg-light">
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PR67ZBR" height="0" width="0"
             style="display:none;visibility:hidden"></iframe>
     </noscript>
-    <div class="header container-fluid pb-3">
+    <!-- fb analytics  script -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '510182806373598',
+                cookie: true,
+                xfbml: true,
+                version: '5.0'
+            });
+
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- end of script  -->
+    <!-- Facebook plugins script  -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0&appId=440864063117452&autoLogAppEvents=1">
+        </script>
+    <!-- end of facebook plugins script  -->
+    <div class="header container-fluid pb-3" data-spy="scroll" data-target=".navbar" data-offset="0">
         <header class="fixed-top">
             <nav class="navbar navbar-expand-lg container"> <a class="navbar-brand" href="#">Raphael
                     Katana</a>
@@ -49,7 +90,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item"> <a class="nav-link" href="#about">About Me <span
+                        <li class="nav-item"> <a class="nav-link active" href="#about">About Me <span
                                     class="sr-only">(current)</span></a></li>
                         <li class="nav-item"> <a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -63,7 +104,7 @@
                                         href="mailto:roduor41@gmail.com">Email</a></div>
                             </div>
                         </li>
-                        <li class="nav-item"> <a class="nav-link" href="./faq.html">FAQ</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="./faq.html" onclick='FB.AppEvents.logEvent("buttonClicked")' >FAQ</a></li>
                     </ul>
                 </div>
             </nav>
@@ -76,10 +117,13 @@
         </div>
     </div>
     <div class="container-fluid pt-5 jumbotron " id="about">
-        <h2 class="pt-3 text-primary text-center ">About Me</h2>
+       <div class="container">
+            <h2 class="pt-3 text-primary text-center ">About Me</h2>
             <h3 class="mx-auto">A great tech enthusiast, driven by passion. I design, <code>code,</code> & develop ... <br>responsive websites and web applications. <br>I occassionally take on SEO gigs, when not busy with what I do. <br>To me, every single day is a day to learn, therefore feel free to teach me something new</h3>
-        <p>You have any questions?
-        <br>You may shoot me an email or check the <a href="./faq.html">FAQ</a></p>
+            <p>You have any questions?
+            <br>You may shoot me an email or check the <a href="./faq.html">FAQ</a> </p><div class="fb-share-button d-inline " data-href="https://tekkweb.com/" data-layout="button_count" data-size='large'>
+            </div>
+       </div>
     </div>
     <div class="container-fluid pt-3" id='projects'>
         <h2 class="pt-3 text-center text-primary">Sample Projects</h2>
@@ -104,7 +148,8 @@
                 </div>
                 <div class="card-footer">
                     <a class="card-link" href="https://moringahub.herokuapp.com/" rel="noopener" target='_blank'>
-                        <button class="btn btn-secondary">View Site</button>
+                        <button class="btn btn-sm btn-secondary">View Site</button>
+                        <div class="fb-like pt-2 ml-md-5 pl-md-5" data-href="https://moringahub.herokuapp.com/" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
                     </a>
                 </div>
             </div>
@@ -127,8 +172,9 @@
                 <div class="card-footer">
                     <a class="card-link" href="https://newskatana.herokuapp.com" rel="noopener" class="card-link"
                         target="_blank">
-                        <button class="btn btn-secondary">View Site</button>
+                        <button class="btn btn-sm btn-secondary">View Site</button>
                     </a>
+                    <div class="fb-like pt-2 ml-md-5 pl-md-5" data-href="https://newskatana.herokuapp.com" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
                 </div>
             </div>
             <div class="card mb-4 shadow">
@@ -149,8 +195,9 @@
                 </div>
                 <div class="card-footer">
                     <a href="https://katana-awwards.herokuapp.com" rel="noopener" target="_blank" class="card-link">
-                        <button class="btn btn-secondary">View Site</button>
+                        <button class="btn btn-sm btn-secondary">View Site</button>
                     </a>
+                    <div class="fb-like pt-2 ml-md-5 pl-md-5" data-href="https://katana-awwards.herokuapp.com" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
                 </div>
             </div>
         </div>
@@ -173,8 +220,9 @@
                 </div>
                 <div class="card-footer">
                     <a href="https://katanagallery.herokuapp.com" rel="noopener" class="card-link" target="_blank">
-                        <button class="btn btn-secondary">View Site</button>
+                        <button class="btn btn-sm btn-secondary">View Site</button>
                     </a>
+                    <div class="fb-like pt-2 ml-md-5 pl-md-5" data-href="https://katanagallery.herokuapp.com" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
                 </div>
             </div>
             <div class="card mb-4 shadow">
@@ -195,8 +243,10 @@
                 </div>
                 <div class="card-footer">
                     <a href="https://katanablog.herokuapp.com" rel="noopener" class="card-link" target="_blank">
-                        <button class="btn btn-secondary">View Ste</button>
+                        <button class="btn btn-sm btn-secondary">View Ste</button>
                     </a>
+                    <div class="fb-like pt-2 ml-md-5 pl-md-5" data-href="https://katanablog.herokuapp.com"
+                        data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
                 </div>
             </div>
             <div class="card mb-4 shadow">
@@ -218,20 +268,55 @@
                 </div>
                 <div class="card-footer">
                     <a href="https://katana-neighbors.herokuapp.com/" rel="noopener" class="card-link" target="_blank">
-                        <button class="btn btn-secondary">View Site</button>
+                        <button class="btn btn-sm btn-secondary">View Site</button>
                     </a>
+                    <div class="fb-like pt-2 ml-md-5 pl-md-5" data-href="https://katana-neighbors.herokuapp.com/"
+                     data-layout="button_count" data-action="like" data-size="large" data-share="true" ></div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="bg-secondary ">
-        <div class="text-white text-center pt-4 pb-3 mb-0">
-            <h4>Made with <span>&hearts;</span> by Raphael Katana</h4>
-            <p>&copy; RKatana <span id='year'></span></p>
+    <div class="container-fluid">
+        <div class="container pt-5">
+            <h2 class="text-primary text-center">Blogs</h2>
+            <h4 class="pt-4 pb-3 text-center">Coming soon ...</h4>
+            <!-- spinners -->
+            <div class="spinners d-flex justify-content-center">
+                <div class="spinner-grow text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+    <section class="">
+    
+        <footer class="bg-secondary">
+            <div class="text-white text-center footer">
+                <h4>Made with <span>&hearts;</span> by Raphael Katana</h4>
+                <p>&copy; RKatana <span id='year'></span></p>
+            </div>
+        </footer>
+    </section>
     <!-- fontawesome cdn -->
-    <script src="https://kit.fontawesome.com/f0434d9042.js" crossorigin="anonymous"></script>
+    <!-- <script defer async src="https://kit.fontawesome.com/f0434d9042.js" crossorigin="anonymous"></script> -->
     <!-- Bootstrap cdns -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -265,6 +350,7 @@
         var date = new Date().getFullYear();
         document.getElementById('year').innerHTML = date + '.';
     </script>
+   
 </body>
 
 </html>
