@@ -32,11 +32,14 @@
     <meta property="og:site_name" content="Tekkweb.com">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
+    <meta property='fb:app_d' content="510182806373598">
     <title>Raphael Katana - A Full Stack Software Developer, Web Designer and a Search Engine Optimization(SEO) Expert.</title>
     <link rel="canonical" href="https://tekkweb.com">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="./manifest.json">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet preload" href="./css/bootstrap.css" as='style'>
     <link rel="preload stylesheet" type="text/css" href="./css/style.css" as="style">
     <link rel="preload stylesheet" href="./css/mediaquery.css" as="style">
@@ -48,6 +51,29 @@
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PR67ZBR" height="0" width="0"
             style="display:none;visibility:hidden"></iframe>
     </noscript>
+    <!-- fb analytics  script -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '510182806373598',
+                cookie: true,
+                xfbml: true,
+                version: '5.0'
+            });
+
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- end of script  -->
     <!-- Facebook plugins script  -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
@@ -78,7 +104,7 @@
                                         href="mailto:roduor41@gmail.com">Email</a></div>
                             </div>
                         </li>
-                        <li class="nav-item"> <a class="nav-link" href="./faq.html">FAQ</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="./faq.html" onclick='FB.AppEvents.logEvent("buttonClicked")' >FAQ</a></li>
                     </ul>
                 </div>
             </nav>
@@ -290,7 +316,7 @@
         </footer>
     </section>
     <!-- fontawesome cdn -->
-    <script defer async src="https://kit.fontawesome.com/f0434d9042.js" crossorigin="anonymous"></script>
+    <!-- <script defer async src="https://kit.fontawesome.com/f0434d9042.js" crossorigin="anonymous"></script> -->
     <!-- Bootstrap cdns -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
